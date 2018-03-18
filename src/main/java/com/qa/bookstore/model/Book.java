@@ -1,4 +1,4 @@
-package com.qa.bookstore;
+package com.qa.bookstore.model;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -25,7 +25,7 @@ public class Book {
     @Temporal(TemporalType.DATE)
     private Date publicationDate;
 
-
+    @Column(name = "no_of_pages")
     private Integer noOfPages;
 
     @Column(name = "image_url")
